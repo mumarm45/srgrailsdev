@@ -35,3 +35,5 @@
 /build/
 /.idea/
 /.gradle/
+*.class
+*.xml
