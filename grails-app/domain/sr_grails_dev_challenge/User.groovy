@@ -7,8 +7,8 @@ class User {
     String name
 
     static constraints = {
-        id size:10..11, matches:"[0-9]+",unique: true
-        amountCoins   matches:"[1-9]+", blank:false
+        id size:1..10, matches:"^\\d{1,10}\$",unique: true
+        amountCoins   matches:"^[1-9]+\$", blank:false
         name nullable: false,blank: false
     }
     static mapping = {
